@@ -25,7 +25,7 @@ else
         echo "awscli is alreday installed"
 
 fi
-#--------------------------------------
+#--Apache2 Running status
 if [ `service apache2 status | grep running | wc -l` == 1 ]
 then
         echo "apache2 service running"
