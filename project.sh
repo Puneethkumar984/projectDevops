@@ -49,5 +49,4 @@ fi
 cd /var/log/apache2/
 tar -cvf /tmp/puneeth-httpd-logs-$(15%01%2023-11:07:00).tar *.log
 aws s3 ls
-aws s3 cp /tmp/puneeth-httpd-logs-$(15%01%2023-11:07:00).tar
-s3://$(ndrinfotech-puneeth)/$(puneeth)-httpd-logs-$(15%01%2023-11:07:00).tar
+aws s3 cp /tmp/puneeth-httpd-logs-$(15%01%2023-11:07:00).tar s3://$(ndrinfotech-puneeth)
